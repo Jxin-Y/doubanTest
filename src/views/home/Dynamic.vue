@@ -23,13 +23,78 @@
                     <van-button
                         class="dynamic_rotation_button" 
                         type="primary">
-                        <img class="dynamic_rotation_img" src="../../assets/img/pen.png">
+                        <img class="dynamic_rotation_img" src="../../assets/img/home/pen.png">
                         参与话题
                     </van-button>
                 </van-swipe-item>
-                <van-swipe-item>2</van-swipe-item>
-                <van-swipe-item>3</van-swipe-item>
-                <van-swipe-item>4</van-swipe-item>
+                <van-swipe-item>
+                    <p class="dynamic_rotation_text_1">新发起</p>
+                    <p class="dynamic_rotation_text_7">
+                        <van-icon name="chat-o" color="#07c160" />
+                        养猫那些事儿
+                    </p>
+                    <p class="dynamic_rotation_text_8">
+                        溪柴火软蛮毡暖，我与狸奴不出门
+                    </p>
+                    <p class="dynamic_rotation_text_9">
+                        1.1万篇内容·1441.2万次浏览
+                    </p>
+                    <van-button
+                        class="dynamic_rotation_button" 
+                        type="primary">
+                        <img class="dynamic_rotation_img" src="../../assets/img/home/pen.png">
+                        参与话题
+                    </van-button>
+                </van-swipe-item>
+                <van-swipe-item>
+                    <p class="dynamic_rotation_text_1">6月11日 ， 周四</p>
+                    <p class="dynamic_rotation_text_5">
+                        开始记录
+                    </p>
+                    <p class="dynamic_rotation_text_6">
+                        这里很安静，暂时没有认识的人
+                    </p>
+                    <p class="dynamic_rotation_text_6">
+                        记录此刻的心情...
+                    </p>
+                    <p class="dynamic_rotation_text_6">
+                        
+                        或是印象深刻的电影、书籍、音乐
+                      
+                    </p>
+                    <p class="dynamic_rotation_text_6">
+                        
+                        
+                        平凡，但重要...
+                    </p>
+                    <van-button
+                        class="dynamic_rotation_button" 
+                        type="primary">
+                        <img class="dynamic_rotation_img" src="../../assets/img/home/pen.png">
+                        写点什么
+                    </van-button>
+                </van-swipe-item>
+                <van-swipe-item>
+                    <p class="dynamic_rotation_text_1">新发起</p>
+                    <p class="dynamic_rotation_text_10">
+                        <van-icon name="chat-o" color="#07c160" />
+                        像我这样节俭地生活
+                    </p>
+                    <p class="dynamic_rotation_text_11">
+                        你为什么要节俭地生活？这样的生活方式给你带来
+                        了怎样的改变？不妨分享一下你的节俭生活心得和
+                        理念
+                    </p>
+                    <p class="dynamic_rotation_text_12">
+                        1.3万篇内容·5085.3万次浏览
+                    </p>
+                    <van-button
+                        class="dynamic_rotation_button" 
+                        type="primary">
+                        <img class="dynamic_rotation_img" src="../../assets/img/home/pen.png">
+                        参与话题
+                    </van-button>
+                </van-swipe-item>
             </van-swipe>
         </div>
     </div>
@@ -102,5 +167,54 @@ export default {
       border-radius: 10px;
       background-color: #fffdf6;
       height: 320px;
+  }
+  .dynamic_rotation_text_5{
+      width: 250px;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: left;
+      margin-left: 18px;
+  }
+  .dynamic_rotation_text_6{
+      width: 250px;
+      font-size: 11px;
+      margin-left: 17px;
+      text-align: left;
+  }
+  .dynamic_rotation_text_7{
+      width: 250px;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: left;
+      margin-left: 18px;
+  }
+ .dynamic_rotation_text_8{
+      width: 250px;
+      font-size: 13px;
+      margin-left: 17px;
+      text-align: left;
+  }
+  .dynamic_rotation_text_9{
+      font-size: 6px;
+      text-align: left;
+      margin-left: 20px;
+  }
+  .dynamic_rotation_text_10{
+      width: 250px;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: left;
+      margin-left: 18px;
+  }
+  .dynamic_rotation_text_11{
+      width: 250px;
+      font-size: 13px;
+      margin-left: 17px;
+      text-align: left;
+  }
+  .dynamic_rotation_text_12{
+      font-size: 6px;
+      text-align: left;
+      margin-left: 20px;
   }
 </style>
