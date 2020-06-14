@@ -8,6 +8,7 @@ import Film from '@/views/douban/Film';
 import Recommend from '@/views/home/Recommend';
 import Search from '@/views/home/Search';
 import Novel from '@/views/douban/Novel';
+import Music from '@/views/douban/Music';
 
 
 Vue.use(VueRouter);
@@ -52,6 +53,11 @@ const routes = [
     path:'/novel',
     name:'Novel',
     component:Novel
+  },
+  {
+    path:'/music',
+    name:'Music',
+    component:Music
   }
 ];
 

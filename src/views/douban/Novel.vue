@@ -423,20 +423,20 @@
                  <div class="novel_four_body_two">
                     <div class="novel_four_body_one_up">
                         <div class="novel_four_body_one_img">
-                            <img class="novel_four_body_one_img_1" src="../../assets/img/douban/book/nanhuaqu.png">
+                            <img class="novel_four_body_one_img_1" src="../../assets/img/douban/book/tonghualuojin.png">
                         </div>
                         <div class="novel_four_body_one_write">
                             <div class="novel_four_body_one_write1">
-                                <span class="novel_four_body_one_write1_text">南华曲</span>
+                                <span class="novel_four_body_one_write1_text">桐花落尽</span>
                             </div>
                             <div class="novel_four_body_one_write2">
                                 <span class="novel_four_body_one_write2_text">作者：第九杯茶</span>
                             </div>
                             <div class="novel_four_body_one_write3">
-                                <img class="novel_four_body_one_write3_img" src="../../assets/img/douban/book/nanhuaquGrade.png">
+                                <img class="novel_four_body_one_write3_img" src="../../assets/img/douban/book/tonghualuojinGrade.png">
                             </div>
                             <div class="novel_four_body_one_write4">
-                                <span class="novel_four_body_one_write4_text">殉葬的青楼女子被赵匡胤所救。为了复仇，她改名易姓，遁入赵府，却就此卷入了一场暗流涌动的朝...</span>
+                                <span class="novel_four_body_one_write4_text">一个普通的现代女孩，跌落民国，偶遇军统杀手，开启一场惊心动魄、荡气回肠的生死穿越。每周...</span>
                             </div>
                         </div>
                     </div>
