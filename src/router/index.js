@@ -9,6 +9,10 @@ import Recommend from '@/views/home/Recommend';
 import Search from '@/views/home/Search';
 import Novel from '@/views/douban/Novel';
 import Music from '@/views/douban/Music';
+import City from '@/views/douban/City';
+import City_choice from '@/views/douban/City_choice';
+import City_sort from '@/views/douban/City_sort';
+import Book from '@/views/douban/Book';
 
 
 Vue.use(VueRouter);
@@ -58,6 +62,26 @@ const routes = [
     path:'/music',
     name:'Music',
     component:Music
+  },
+  {
+    path:'/city',
+    name:'City',
+    component:City
+  },
+  {
+    path:'/city_choice',
+    name:'City_choice',
+    component:City_choice
+  },
+  {
+    path:'/city_sort',
+    name:'City_sort',
+    component:City_sort
+  },
+  {
+    path:'/book',
+    name:'Book',
+    component:Book
   }
 ];
 

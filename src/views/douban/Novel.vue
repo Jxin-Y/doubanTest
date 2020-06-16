@@ -418,7 +418,7 @@
                     <div class="novel_four_body_one_button">
                         <van-button plain hairline color="#BDBDBD" size="mini">历史小说</van-button>
                     </div>
-                    <hr align="left" width="600px" color="#D8D8D8" size="0.5" />
+                    <hr align="left" width="320px" color="#D8D8D8" size="0.5" />
                 </div>
                  <div class="novel_four_body_two">
                     <div class="novel_four_body_one_up">
@@ -443,7 +443,7 @@
                     <div class="novel_four_body_one_button">
                         <van-button plain hairline color="#BDBDBD" size="mini">历史小说</van-button>
                     </div>
-                    <hr align="left" width="600px" color="#D8D8D8" size="0.5" />
+                    <hr align="left" width="320px" color="#D8D8D8" size="0.5" />
                 </div>
             </div>
         </div>

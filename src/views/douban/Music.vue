@@ -436,9 +436,8 @@
                         <span class="music_four_one_down_down_text">你可能感兴趣</span>
                     </div>
                 </div>
-               
             </div>
-            <hr>
+            <hr align="left" width="320px" color="#D8D8D8" size="0.5" />
             <div class="music_four_one">
                 <div class="music_four_one_up">
                     <img class="music_four_one_img" src="..\..\assets\img\douban\music\pickRecommend.png">
@@ -464,9 +463,8 @@
                         <span class="music_four_one_down_down_text">你可能感兴趣</span>
                     </div>
                 </div>
-               
             </div>
-            <hr>
+            <hr align="left" width="320px" color="#D8D8D8" size="0.5" />
         </div>
     </div>
 </template>
