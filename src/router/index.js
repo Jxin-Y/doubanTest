@@ -13,6 +13,8 @@ import City from '@/views/douban/City';
 import City_choice from '@/views/douban/City_choice';
 import City_sort from '@/views/douban/City_sort';
 import Book from '@/views/douban/Book';
+import Teleplay from '@/views/douban/Teleplay';
+import Group from '@/views/group/Group';
 
 
 Vue.use(VueRouter);
@@ -82,6 +84,16 @@ const routes = [
     path:'/book',
     name:'Book',
     component:Book
+  },
+  {
+    path:'/teleplay',
+    name:'Teleply',
+    component:Teleplay
+  },
+  {
+    path:'/group',
+    name:'Group',
+    component:Group
   }
 ];
 

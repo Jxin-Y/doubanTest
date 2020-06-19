@@ -19,6 +19,7 @@
         @click="onClick"
         class="home_body_bar" 
         title-active-color="#0fc23a"
+        color="#04B404"
         line-height="1.5px"
         line-width="27px">
         <van-tab title="动态">
