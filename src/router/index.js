@@ -15,6 +15,10 @@ import City_sort from '@/views/douban/City_sort';
 import Book from '@/views/douban/Book';
 import Teleplay from '@/views/douban/Teleplay';
 import Group from '@/views/group/Group';
+import Message from '@/views/home/Message';
+import Chat from '@/views/home/Chat';
+import My from '@/views/my/My';
+
 
 
 Vue.use(VueRouter);
@@ -94,6 +98,21 @@ const routes = [
     path:'/group',
     name:'Group',
     component:Group
+  },
+  {
+    path:'/message',
+    name:'Message',
+    component:Message
+  },
+  {
+    path:'/chat',
+    name:'Chat',
+    component:Chat
+  },
+  {
+    path:'/my',
+    name:'My',
+    component:My
   }
 ];
 

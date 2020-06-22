@@ -647,4 +647,5 @@ export default {
 .novel_four_body_one_button{
     padding-left: 250px;
 }
+
 </style>
