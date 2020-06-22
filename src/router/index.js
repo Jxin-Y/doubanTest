@@ -18,6 +18,9 @@ import Group from '@/views/group/Group';
 import Message from '@/views/home/Message';
 import Chat from '@/views/home/Chat';
 import My from '@/views/my/My';
+import Market from '@/views/market/Market';
+import Bottom from '@/views/home/Bottom';
+
 
 
 
@@ -113,6 +116,16 @@ const routes = [
     path:'/my',
     name:'My',
     component:My
+  },
+  {
+    path:'/market',
+    name:'Market',
+    component:Market
+  },
+  {
+    path:'/bottom',
+    name:'Bottom',
+    component:Bottom
   }
 ];
 
