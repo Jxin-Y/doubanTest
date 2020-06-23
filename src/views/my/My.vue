@@ -1,398 +1,235 @@
 <template>
-<div> 
-    <div class="top">
-        <div class="top-icon">
-            <img class="top-icon1" src="..\..\assets\img\my\豆瓣设置.png" alt="">
-            <img class="top-icon2" src="..\..\assets\img\my\豆瓣消息.png" alt="">
+    <div class="my_all">
+        <div class="my_head">
+            <van-icon @click="setting" class="my_head_botton1" size="20px" color="#ffffff" name="setting-o" />
+            <van-icon class="my_head_botton2" size="20px" color="#ffffff" name="envelop-o" />
         </div>
-
-        <div class="top-title">
-            <van-image class="top-image" round width="50px" height="50px" src="https://img.yzcdn.cn/vant/cat.jpeg"/>
-            <div>
-                <p class="top-title1">哦哦</p>
-                <p class="top-title2">关注0</p>
+        <div class="my_one">
+            <div class="my_one_img">
+                <van-image
+                    round
+                    width="40px"
+                    height="40px"
+                    src="https://img.yzcdn.cn/vant/cat.jpeg"
+                />
             </div>
-            <p class="top-title3">被关注0</p>
-            <p class="top-title4">个人主页</p>
+            <div class="my_one_text">
+                <div>
+                    <span class="my_one_text1">秋<van-icon size="13px" color="#ffffff" name="friends" /></span>
+                    <span @click="myself" class="my_one_text2">个人主页<van-icon name="arrow" /></span>
+                </div>
+                <div>
+                    <span class="my_one_text3">关注 0</span>
+                    <span class="my_one_text4">被关注 0</span>
+                </div>
+            </div>
         </div>
-    </div>  
-
-    <div class="bg">
-        <p class="bg-title">在这里，记录你的书影音生活</p>
-        <p class="bg-title1">开启我的书影音档案</p>
-    </div>   
-
-    <div class="title">
-        <p class="title1">影视</p>
-        <p class="title2">图书</p>
-        <p class="title3">音乐</p>
-    </div>
-    <div class="line"></div>
-    <div class="line1"></div>
-
-    <div class="kind">
-        <div class="kind1">
-            <p class="kind1-title">影视</p> 
-            <img src="..\..\assets\img\my\影视.png" alt="">
-            <p class="kind1-title1">记录你想看、在看、看过的影视</p>
+        <div class="my_tiao"></div>
+        <div class="my_two">
+            <img class="my_two_img" src="..\..\assets\img\my\mydang.png">
         </div>
-         <div class="kind2">
-            <p class="kind2-title">图书</p> 
-            <img src="..\..\assets\img\my\图书.png" alt="">
-            <p class="kind2-title1">记录你想读、在读、读过的图书</p>
+        <div class="my_three">
+            <div class="my_three1">
+                <span class="my_three1_text1">影视</span>
+                <span class="my_three1_text2">图书</span>
+                <span class="my_three1_text3">音乐</span>
+            </div>
+            <div class="line"></div>
+            <hr align="left" width="319px" color="#D8D8D8" size="0.5" />        
         </div>
-         <div class="kind3">
-            <p class="kind3-title">音乐</p> 
-            <img src="..\..\assets\img\my\音乐.png" alt="">
-            <p class="kind3-title1">记录你想听、在听、听过的音乐</p>
+        <div class="my_four">
+            <img class="my_four_img" src="..\..\assets\img\my\myfilm.png">
+            <img class="my_four_img" src="..\..\assets\img\my\mybook.png">
+            <img class="my_four_img" src="..\..\assets\img\my\mymusic.png">
         </div>
+        <div class="my_tiao"></div>
+        <div class="my_five">
+            <img class="my_five_img" src="..\..\assets\img\my\myicon1.png">
+            <span class="my_five_text">看电影</span>
+            <van-icon class="my_five_icon1" name="arrow" />
+        </div>
+        <div class="my_tiao"></div>
+        <div class="my_five">
+            <img class="my_five_img" src="..\..\assets\img\my\myicon2.png">
+            <span class="my_five_text">我的发布</span>
+            <van-icon class="my_five_icon2" name="arrow" />
+        </div>
+        <div class="my_five">
+            <img class="my_five_img" src="..\..\assets\img\my\myicon3.png">
+            <span class="my_five_text">我的日记</span>
+            <van-icon class="my_five_icon3" name="arrow" />
+        </div>
+        <div class="my_five">
+            <img class="my_five_img" src="..\..\assets\img\my\myicon4.png">
+            <span class="my_five_text">我的关注</span>
+            <van-icon class="my_five_icon4" name="arrow" />
+        </div>
+        <div class="my_five">
+            <img class="my_five_img" src="..\..\assets\img\my\myicon5.png">
+            <span class="my_five_text">相册</span>
+            <van-icon class="my_five_icon5" name="arrow" />
+        </div>
+        <div class="my_five">
+            <img class="my_five_img" src="..\..\assets\img\my\myicon6.png">
+            <span class="my_five_text">豆列/收藏</span>
+            <van-icon class="my_five_icon6" name="arrow" />
+        </div>
+        <div class="my_tiao"></div>
+        <div class="my_five">
+            <img class="my_five_img" src="..\..\assets\img\my\myicon7.png">
+            <span class="my_five_text">钱包</span>
+            <van-icon @click="money" class="my_five_icon5" name="arrow" />
+        </div>
+        <div class="my_tiao"></div>
+        <div class="my_tiao1"></div>
     </div>
-
-    <div class="bg1"></div>
-
-    <div class="text">
-        <div><img class="text-icon" src="..\..\assets\img\my\看电影.png" alt=""></div>
-        <p class="text-title">看电影</p>
-        <div><img class="text-icon1" src="..\..\assets\img\my\豆瓣更多.png" alt=""></div>
-    </div>
-    <div class="bg2"></div>
-
-    <div class="text1">
-        <div><img class="text1-icon" src="..\..\assets\img\my\我的发布.png" alt=""></div>
-        <p class="text1-title">我的发布</p>
-        <div><img class="text1-icon1" src="..\..\assets\img\my\豆瓣更多.png" alt=""></div>
-    </div>
-    <div class="xian">
-          <van-divider  :style="{ borderColor: '#b5b5b5' }" />
-             </div>
-    
-     <div class="text2">
-        <div><img class="text2-icon" src="..\..\assets\img\my\我的关注.png" alt=""></div>
-        <p class="text2-title">我的关注</p>
-        <div><img class="text2-icon1" src="..\..\assets\img\my\豆瓣更多.png" alt=""></div>
-    </div>
-    <div class="xian">
-          <van-divider  :style="{ borderColor: '#b5b5b5' }" />
-             </div>
-
-     <div class="text3">
-        <div><img class="text3-icon" src="..\..\assets\img\my\相册.png" alt=""></div>
-        <p class="text3-title">相册</p>
-        <div><img class="text3-icon1" src="..\..\assets\img\my\豆瓣更多.png" alt=""></div>
-    </div>
-    <div class="xian">
-          <van-divider  :style="{ borderColor: '#b5b5b5' }" />
-             </div>
-
-    <div class="text4">
-        <div><img class="text4-icon" src="..\..\assets\img\my\豆列.png" alt=""></div>
-        <p class="text4-title">豆列/收藏</p>
-        <div><img class="text4-icon1" src="..\..\assets\img\my\豆瓣更多.png" alt=""></div>
-    </div>
- 
-    <div class="bg3"></div>
-
-     <div class="text5">
-        <div><img class="text5-icon" src="..\..\assets\img\my\钱包.png" alt=""></div>
-        <p class="text5-title">钱包</p>
-        <div><img class="text5-icon1" src="..\..\assets\img\my\豆瓣更多.png" alt=""></div>
-    </div>
-</div>
 </template>
 
 <script>
 export default {
-    
+    methods:{
+        setting(){
+            this.$router.push("/setting")
+        },
+        myself(){
+            this.$router.push("/myself")
+        },
+        money(){
+            this.$router.push("/money")
+        }
+    }
 }
 </script>
 
-<style>
-.top{
-    width: 100%;
-    height: 130px;
-    background-color: #5cc66c;
+<style scoped>
+.my_head{
+    text-align: left;
+    padding-top: 10px;
+    background-color: #03C506;
 }
-.top-icon{
-    display: flex;
-}
-.top-icon1{
+.my_head_botton1{
     margin-left: 10px;
 }
-.top-icon2{
-    margin-left: 250px;
+.my_head_botton2{
+    margin-left: 260px;
 }
-.top-title{
-    display: flex;
-}
-.top-image{
-    margin-left: 10px;
-    margin-top: 40px;
-}
-.top-title1{
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 15px;
-    margin-left: 15px;
-    margin-top: 45px;
-}
-.top-title2{
-    font-size: 11px;
-    color: #FFFFFF;
-    margin-left: 15px;
-    margin-top: -10px;
-}
-.top-title3{
-    font-size: 11px;
-    color: #FFFFFF;
-    margin-left: 20px;
-    margin-top: 70px;
-}
-.top-title4{
-    font-size: 11px;
-    color: #FFFFFF;
-    margin-top: 50px;
-    margin-left: 100px;
-}
-.bg{
-    width: 280px;
-    height: 60px;
-    margin-left: 20px;
-    margin-top: 10px;
-    border-radius: 10px;
-    background-color: #000000;
-}
-.bg-title{
-    font-size: 12px;
-    color: #FFFFFF;
+.my_one{
+    text-align: left;
     padding-top: 15px;
-}
-.bg-title1{
-    font-size: 12px;
-    color: #2b934f;
-    margin-top: -10px;
-}
-.title{
     display: flex;
+    background-color: #03C506;
+    padding-bottom: 15px;
 }
-.title1{
-    margin-left: 20px;
-    font-size: 15px;
+.my_one_img{
+    margin-left: 10px;
 }
-.title2{
-    margin-left: 20px;
-    font-size: 15px;
-    color: #bfbfbf;
+.my_one_text{
+    margin-left: 10px;
 }
-.title3{
+.my_one_text1{
+    font-size: 14px;
+    font-weight: 1000;
+    color: #ffffff;
+}
+.my_one_text2{
+    font-size: 14px;
+    color: #ffffff;
+    margin-left: 160px;
+}
+.my_one_text3{
+    font-size: 14px;
+    color: #ffffff;
+}
+.my_one_text4{
+    font-size: 14px;
+    color: #ffffff;
     margin-left: 20px;
+}
+.my_tiao{
+    height: 5px;
+    background-color: #E6E6E6;
+}
+.my_two_img{
+    width: 300px;
+    margin-top: 10px;
+}
+.my_three1{
+    margin-top: 10px;
+    text-align: left;
+}
+.my_three1_text1{
     font-size: 15px;
-    color: #bfbfbf;
+    
+    margin-left: 20px;
+}
+.my_three1_text2{
+    font-size: 15px;
+    color: #BDBDBD;
+    margin-left: 20px;
+}
+.my_three1_text3{
+    font-size: 15px;
+    color: #BDBDBD;
+    margin-left: 20px;
 }
 .line{
-    width: 28px;
-    margin-top: -10px;
+    margin-top: 5px;
     height: 2px;
+    width: 30px;
+    background-color: black;
     margin-left: 20px;
-    background-color: #000000;
 }
-.line1{
-    width: 100%;
-    height: 1px;
-    background-color: #dfdfdf;
-}
-.kind{
-    width: 100%;
-    height: 120px;
-    margin-top: 10px;
-    display: flex;
-}
-.kind1{
-    width: 90px;
-    height: 110px;
-    margin-left: 20px;
-    border-radius: 5px;
-    border: #dfdfdf 1px solid;
-}
-.kind1-title{
-    font-size: 10px;
-    font-weight: bold;
-    margin-left: -50px;
-}
-.kind1-title1{
-    font-size: 10px;
-    color: #bfbfbf;
+.my_four{
     text-align: left;
+    margin-bottom: 10px;
 }
-.kind2{
-    width: 90px;
-    height: 110px;
+.my_four_img{
+    height: 90px;
     margin-left: 10px;
-    border-radius: 5px;
-    border: #dfdfdf 1px solid;
 }
-.kind2-title{
-    font-size: 10px;
-    font-weight: bold;
-    margin-left: -50px;
-}
-.kind2-title1{
-    font-size: 10px;
-    color: #bfbfbf;
+.my_five{
+    height: 35px;
+    width: 100%;
     text-align: left;
+    display: flex;
+    
 }
-.kind3{
-    width: 90px;
-    height: 110px;
+.my_five_img{
+    height: 25px;
     margin-left: 10px;
-    border-radius: 5px;
-    border: #dfdfdf 1px solid;
+    line-height: 35px;
 }
-.kind3-title{
-    font-size: 10px;
-    font-weight: bold;
-    margin-left: -50px;
+.my_five_text{
+    font-size: 13px;
+    line-height: 35px;
+    margin-left: 10px;
 }
-.kind3-title1{
-    font-size: 10px;
-    color: #bfbfbf;
-    text-align: left;
+.my_five_icon1{
+    line-height: 35px;
+    margin-left: 210px;
 }
-.bg1{
-    width: 100%;
-    height: 10px;
-    background-color: #ededed;
+.my_five_icon2{
+    line-height: 35px;
+    margin-left: 200px;
 }
-.text{
-    display: flex;
-    width: 100%;
-    height: 40px;
+.my_five_icon3{
+    line-height: 35px;
+    margin-left: 200px;
 }
-.text-icon{
-    margin-left: 20px;
-    padding-top: 5px;
+.my_five_icon4{
+    line-height: 35px;
+    margin-left: 200px;
 }
-.text-title{
-    margin-left: 15px;
-    font-size: 15px;
-    margin-top: 8px;
+.my_five_icon5{
+    line-height: 35px;
+    margin-left: 225px;
 }
-.text-icon1{
-    margin-left: 180px;
-    margin-top: 5px;
+.my_five_icon6{
+    line-height: 35px;
+    margin-left: 195px;
 }
-.bg2{
-    width: 100%;
-    height: 10px;
-    background-color: #ededed;
-}
-.text1{
-    display: flex;
-    width: 100%;
-    height: 40px;
-}
-.text1-icon{
-    margin-left: 20px;
-    padding-top: 5px;
-}
-.text1-title{
-    margin-left: 15px;
-    font-size: 15px;
-    margin-top: 8px;
-}
-.text1-icon1{
-    margin-left: 165px;
-    margin-top: 5px;
-}
-.xian{
-    margin-top: -15px;
-}
-.text2{
-    display: flex;
-    width: 100%;
-    margin-top: -15px;
-    height: 40px;
-}
-.text2-icon{
-    margin-left: 20px;
-    padding-top: 5px;
-}
-.text2-title{
-    margin-left: 15px;
-    font-size: 15px;
-    margin-top: 8px;
-}
-.text2-icon1{
-    margin-left: 165px;
-    margin-top: 5px;
-}
-.xian{
-    margin-top: -15px;
-}
-.text3{
-    display: flex;
-    width: 100%;
-    margin-top: -15px;
-    height: 40px;
-}
-.text3-icon{
-    margin-left: 20px;
-    padding-top: 5px;
-}
-.text3-title{
-    margin-left: 15px;
-    font-size: 15px;
-    margin-top: 8px;
-}
-.text3-icon1{
-    margin-left: 190px;
-    margin-top: 5px;
-}
-.xian{
-    margin-top: -15px;
-}
-.text4{
-    display: flex;
-    width: 100%;
-    margin-top: -15px;
-    height: 40px;
-}
-.text4-icon{
-    margin-left: 20px;
-    padding-top: 5px;
-}
-.text4-title{
-    margin-left: 15px;
-    font-size: 15px;
-    margin-top: 8px;
-}
-.text4-icon1{
-    margin-left: 160px;
-    margin-top: 5px;
-}
-.xian{
-    margin-top: -15px;
-}
-.bg3{
-    width: 100%;
-    height: 10px;
-    background-color: #ededed;
-}
-.text5{
-    display: flex;
-    width: 100%;
-    height: 40px;
-}
-.text5-icon{
-    margin-left: 20px;
-    padding-top: 5px;
-}
-.text5-title{
-    margin-left: 15px;
-    font-size: 15px;
-    margin-top: 8px;
-}
-.text5-icon1{
-    margin-left: 190px;
-    margin-top: 5px;
+.my_tiao1{
+    height: 50px;
+    background-color: #E6E6E6;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="sort_all">
         <div class="sort_head">
-            <van-icon class="sort_head_icon" name="arrow-left" />
+            <van-icon @click="doubanhome" class="sort_head_icon" name="arrow-left" />
             <span class="sort_head_text">分类筛选</span>
         </div>
         <div class="sort_neck">
@@ -164,6 +164,16 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    methods:{
+        doubanhome(){
+            this.$router.push("/douban_home")
+        }
+    }
+}
+</script>
 
 <style scoped>
 .sort_head_icon{

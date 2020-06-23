@@ -1,7 +1,7 @@
 <template>
     <div class="choice_all">
         <div class="choice_head">
-            <van-icon class="choice_head_icon" name="arrow-left" />
+            <van-icon @click="doubanhome" class="choice_head_icon" name="arrow-left" />
             <span class="choice_head_text">选择城市</span>
             <hr align="left" width="318px" color="#D8D8D8" size="0.5" />
         </div>
@@ -162,6 +162,16 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    methods:{
+        doubanhome(){
+            this.$router.push("/douban_home")
+        }
+    }
+}
+</script>
 
 <style scoped>
 .choice_head_icon{

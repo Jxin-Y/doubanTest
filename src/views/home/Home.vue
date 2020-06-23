@@ -54,7 +54,7 @@
                       </van-button>
                     </div>
                 </van-swipe-item>
-              <van-swipe-item>
+                <van-swipe-item>
                     <p class="dynamic_rotation_text_1">新发起</p>
                     <p class="dynamic_rotation_text_7">
                         <van-icon name="chat-o" color="#07c160" />
@@ -369,7 +369,7 @@
       margin-left: 20px;
   }
 .recommend_all{
-    height: 586px;
+    height: 286px;
     width: 320px;
     background: rgb(226, 226, 226);
 }

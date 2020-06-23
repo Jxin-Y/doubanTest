@@ -153,6 +153,7 @@
                 </div>
             </div>
         </div> 
+        <div class="city_end"></div>
     </div>
 </template>
 
@@ -254,5 +255,8 @@
     font-size: 12px;
     font-weight: 800;
     margin-left: 195px;
+}
+.city_end{
+    height: 60px;
 }
 </style>

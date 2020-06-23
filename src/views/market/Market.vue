@@ -595,6 +595,7 @@
                         </van-tabs>
                     </div>
                 </div>
+                <div class="market_doupin_nine"></div>
             </div>
         </van-tab>
         <van-tab title="豆瓣时间">
@@ -807,6 +808,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="market_time_five"></div>
             </div>
         </van-tab>
     </van-tabs>
@@ -1197,5 +1199,11 @@
     margin-left: 10px;
     margin-top: 10px;
     display: flex;
+}
+.market_doupin_nine{
+    height: 60px;
+}
+.market_time_five{
+    height: 60px;
 }
 </style>

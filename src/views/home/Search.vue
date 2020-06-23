@@ -9,7 +9,7 @@
                 />
             </div>
             <div class="search_search_2">
-                <span class="search_search_2_write">取消</span>
+                <span @click="doubanhome" class="search_search_2_write">取消</span>
             </div>
         </div>
         <div class="search_body">
@@ -133,6 +133,16 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    methods:{
+        doubanhome(){
+            this.$router.push("/douban_home")
+        },
+    }
+}
+</script>
 
 <style scoped>
 .search_search{

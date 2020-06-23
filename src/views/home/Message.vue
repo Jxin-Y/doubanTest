@@ -1,122 +1,114 @@
 <template>
-<div>
-    <div class="top">
-        <div class="top1">
-        <div><img src="..\..\assets\img\home\back.png"></div>
-        <p class="top-title">提醒</p>
-        <p class="top-title1">私信</p>
+    <div class="message_all">
+        <div class="message_head">
+            <div class="message_head1">
+                <van-icon @click="doubanhome" name="arrow-left" />
+                <span class="message_head1_text1">提醒</span>
+                <span class="message_head1_text2">私信</span>
+            </div>
+            <div class="line"></div>        
         </div>
-        <div class="line"></div>
-    </div>  
-
-    <div class="tip">
-        <div>
-            <span class="tip-title">1条</span>
+        <div class="message_one">
+            <span class="message_one_text1">1条</span>
+            <span class="message_one_text2">全部已读</span>
+            <van-button plain type="primary" size="mini">发私信</van-button>
         </div>
-        <div>
-            <span class="tip-title1">全部已读</span>
+        <div @click="chat" class="message_two">
+            <img class="message_two_img" src="..\..\assets\img\home\douban_news.png">
+            <div class="message_two_text">
+                <div class="message_two_text_up">
+                    <span class="message_two_text_up_text1">豆瓣</span>
+                    <span  class="message_two_text_up_text2">3月6日</span>
+                    <span class="message_two_text_up_text3">···</span>
+                </div>
+                <div class="message_two_text_down">
+                    <span class="message_two_text_down_text1">欢迎使用豆瓣。...</span>
+                </div>
+            </div>
         </div>
-        
-        <div class="border">
-            <span class="border-title">发私信</span>
-        </div>
-    </div>  
-
-    <div class="message">
-        <div class="message-image"><img src="..\..\assets\img\home\douban_news.png"></div>
-        <div class="message-title">
-            <p class="message-title1">豆瓣</p>
-            <p class="message-title2">欢迎使用豆瓣。</p>
-        </div>
-        <p class="message-time">21分钟前</p>
-        <p class="message-more">...</p>
     </div>
-
-</div>
 </template>
 
+<script>
+export default {
+     methods:{
+        doubanhome(){
+            this.$router.push("/douban_home")
+        },
+        chat(){
+            this.$router.push("/chat")
+        }
+     }
+}
+</script>
+
 <style>
-.top{
-    width: 100%;
-    height: 40px;
+.message_head1{
+    margin-top: 10px;
+    text-align: left;
 }
-.top1{
-    display: flex;
-}
-.top-title{
+.message_head1_text1{
     font-size: 15px;
-    color: #bfbfbf;
-    margin-left: 80px;
+    color: #BDBDBD;
+    margin-left: 100px;
 }
-.top-title1{
+.message_head1_text2{
     font-size: 15px;
-    margin-left: 60px;
+    margin-left: 40px;
 }
 .line{
-    width: 37px;
-    height: 1px;
-    margin-left: 200px;
-    margin-top: -13px;
-    background-color: black;
-}
-.tip{
-    width: 100%;
-    height: 30px;
-    display: flex;
-    background-color: #ededed;
-}
-.tip-title{
-    font-size: 13px;
-    color: #bfbfbf;
-    margin-left: 10px;
-    margin-top: 5px;    
-}
-.tip-title1{
-    font-size: 13px;
-    color: #bfbfbf;
-    margin-left: 170px;
     margin-top: 5px;
+    height: 1px;
+    width: 30px;
+    background-color: black;
+    margin-left: 186px;
 }
-.border{
-    width: 50px;
-    height: 20px;
-    border-radius: 5px;
-    margin-left: 10px;
-    margin-top: 2px;
-    border: #63a76c 1px solid;
-}
-.border-title{
-    color: #63a76c;
-    font-size: 13px;
-    margin-top: 2px;
-}
-.message{
+.message_one{
+    height: 35px;
     width: 100%;
-    height: 60px;
+    background-color: #E6E6E6;
+    text-align: left;
+}
+.message_one_text1{
+    font-size: 13px;
+    line-height: 35px;
+    margin-left: 10px;
+    color: #BDBDBD;
+}
+.message_one_text2{
+    font-size: 13px;
+    line-height: 35px;
+    margin-left: 160px;
+    margin-right: 15px;
+    color: #BDBDBD;
+}
+.message_two_img{
+    height: 30px;
+}
+.message_two{
+    margin-top: 10px;
     display: flex;
-}
-.message-image{
     margin-left: 20px;
-    margin-top: 8px;
 }
-.message-title1{
-    font-size: 15px;
-    margin-left: -50px;
+.message_two_text{
+    text-align: left;
+    margin-left: 10px;
 }
-.message-title2{
-    font-size: 12px;
-    margin-top: -15px;
-    margin-left: 5px;
-    color: #bfbfbf;
+.message_two_text_up_text1{
+    font-size: 14px;
 }
-.message-time{
-    font-size: 12px;
-    color: #bfbfbf;
-    margin-left: 90px;
+.message_two_text_up_text2{
+    font-size: 10px;
+    margin-left: 170px;
+    color: #BDBDBD;
 }
-.message-more{
-    margin-top: 8px;
-    margin-left: 5px;
+.message_two_text_up_text3{
+    font-size: 10px;
+    font-weight: 1000;
+    margin-left: 10px;
 }
-
+.message_two_text_down_text1{
+    font-size: 11px;
+    color: #BDBDBD;
+}
 </style>

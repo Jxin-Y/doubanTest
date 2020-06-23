@@ -1,7 +1,7 @@
 <template>
 <div>
     <div class="top">
-        <div><img src="..\..\assets\img\home\back.png"></div>
+        <div><img @click="message" src="..\..\assets\img\home\back.png"></div>
         <p class="top-title">豆瓣</p>
         <p class="top-more">...</p>
     </div> 
@@ -34,7 +34,11 @@
 
 <script>
 export default {
-    
+    methods:{
+        message(){
+            this.$router.push("/message")
+        }
+     }
 }
 </script>
 

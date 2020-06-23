@@ -20,6 +20,14 @@ import Chat from '@/views/home/Chat';
 import My from '@/views/my/My';
 import Market from '@/views/market/Market';
 import Bottom from '@/views/home/Bottom';
+import Setting from '@/views/my/Setting';
+import Music_classify from '@/views/douban/Music_classify';
+import Music_classify_in from '@/views/douban/Music_classify_in';
+import Myself from '@/views/my/Myself';
+import Money from '@/views/my/Money';
+import Money_ticket from '@/views/my/Money_ticket';
+
+
 
 
 
@@ -27,11 +35,47 @@ import Bottom from '@/views/home/Bottom';
 Vue.use(VueRouter);
 
 const routes = [
+ 
   {
-    path:'/',
+    path:'/bottom',
+    name:'Bottom',
+    component:Bottom
+  },
+  {
+    path: '/',
+    name: 'Layout',
+    meta: {title:'首页底部导航栏'},
+    component: Bottom,
+    redirect:'home',
+    children:[
+      {
+    path:'/home',
     name:'Home',
     component:Home
+    },
+    {
+    path:'/douban_home',
+    name:'Douban_home',
+    component:Douban_home
+    },
+    {
+      path:'/group',
+      name:'Group',
+      component:Group
+    },
+    {
+      path:'/market',
+      name:'Market',
+      component:Market
+    },
+    {
+      path:'/my',
+      name:'My',
+      component:My
+    }
+    ]
   },
+  
   {
     path:'/news',
     name:'News',
@@ -42,11 +86,7 @@ const routes = [
     name:'Dynamic',
     component:Dynamic
   },
-  {
-    path:'/douban_home',
-    name:'Douban_home',
-    component:Douban_home
-  },
+  
   {
     path:'/film',
     name:'Film',
@@ -98,11 +138,6 @@ const routes = [
     component:Teleplay
   },
   {
-    path:'/group',
-    name:'Group',
-    component:Group
-  },
-  {
     path:'/message',
     name:'Message',
     component:Message
@@ -113,20 +148,37 @@ const routes = [
     component:Chat
   },
   {
-    path:'/my',
-    name:'My',
-    component:My
+    path:'/setting',
+    name:'Setting',
+    component:Setting
   },
   {
-    path:'/market',
-    name:'Market',
-    component:Market
+    path:'/music_classify',
+    name:'Music_classify',
+    component:Music_classify
   },
   {
-    path:'/bottom',
-    name:'Bottom',
-    component:Bottom
+    path:'/music_classify_in',
+    name:'Music_classify_in',
+    component:Music_classify_in
+  },
+  {
+    path:'/myself',
+    name:'Myself',
+    component:Myself
+  },
+  {
+    path:'/money',
+    name:'Money',
+    component:Money
+  },
+  {
+    path:'/money_ticket',
+    name:'Money_ticket',
+    component:Money_ticket
   }
+  
+  
 ];
 
 const router = new VueRouter({

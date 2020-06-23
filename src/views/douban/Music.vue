@@ -402,8 +402,9 @@
             <div class="music_three_head">
                 <div class="music_one_head">
                     <span class="music_one_head_write1">分类浏览</span>
-                    <span class="music_three_head_write2">全部</span>
-                    <van-icon class="music_one_head_write3" name="arrow" />
+                
+                    <span @click="musicclassify" class="music_three_head_write2">全部</span>
+                    <van-icon @click="musicclassify" class="music_one_head_write3" name="arrow"/>
                 </div>
             </div>
         </div>
@@ -468,6 +469,17 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    methods:{
+        musicclassify(){
+            this.$router.push("/music_classify")
+        }
+    }
+}
+</script>
+
 
 <style scoped>
 .music_one{
@@ -639,5 +651,8 @@
 }
 .music_four{
     margin-top: 20px;
+}
+.music_end{
+    height: 60px;
 }
 </style>
