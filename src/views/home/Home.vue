@@ -137,10 +137,10 @@
             <div class="recommend_dynamic_1">
                 <div class="recommend_dynamic_title">
                    <div class="recommend_dynamic_title_img">
-                       <img class="recommend_dynamic_title_img_1" src="../../assets/img/home/header.png">
+                       <img class="recommend_dynamic_title_img_1" src="../../assets/img/home/homerecommend3.png">
                    </div>   
                    <div class="recommend_dynamic_title_text">
-                       <span>Coriopo</span>
+                       <span>夏天</span>
                    </div>
                    <div class="recommend_dynamic_title_ellipsis">
                        <span>...</span>
@@ -149,16 +149,16 @@
                 <div class="recommend_dynamic_topic">
                     <div class="recommend_dynamic_topic_background">
                         <img class="recommend_dynamic_topic_img" src="../../assets/img/home/topic.png">
-                        <span class="recommend_dynamic_topic_write">电影里的电影</span>
+                        <span class="recommend_dynamic_topic_write">捕捉粉色的云</span>
                     </div> 
                 </div>
                 <div class="recommend_dynamic_body">
                     <div class="recommend_dynamic_body_write">
-                        <span>跑这个题 这个实在忍不住 (弄得我又得去看了一遍闪灵哈哈哈哈)</span>
+                        <span>夏天的天|晚自习时的天空在这一刻烂漫无比。</span>
                     </div>
                     <div class="recommend_dynamic_body_img">
-                        <img class="recommend_dynamic_body_img_1" src="../../assets/img/home/body1.png">
-                        <img class="recommend_dynamic_body_img_2" src="../../assets/img/home/body2.png">
+                        <img class="recommend_dynamic_body_img_1" src="../../assets/img/home/homerecommend1.png">
+                        <img class="recommend_dynamic_body_img_2" src="../../assets/img/home/homerecommend.png">
                     </div>
                 </div>
                 <div class="recommend_dynamic_bottom">

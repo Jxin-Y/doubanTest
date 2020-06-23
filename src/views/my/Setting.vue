@@ -15,12 +15,12 @@
         <div class="setting_tiao"></div>
         <div class="setting_two">
             <span class="setting_two_text1">账号与安全</span>
-            <van-icon class="setting_two_text2" name="arrow" />
+            <van-icon @click="settingnumber" class="setting_two_text2" name="arrow" />
         </div>
         <div class="setting_tiao"></div>
         <div class="setting_three">
             <span class="setting_three_text1">推送</span>
-           
+           <van-icon @click="push" class="setting_three_text2" name="arrow" />
         </div>
         <div class="setting_tiao"></div>
         <div class="setting_four">
@@ -80,6 +80,12 @@ export default {
     methods:{
         my(){
             this.$router.push("/my")
+        },
+        settingnumber(){
+            this.$router.push("/setting_number")
+        },
+        push(){
+            this.$router.push("/push")
         }
     }
 }

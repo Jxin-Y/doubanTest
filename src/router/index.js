@@ -26,7 +26,9 @@ import Music_classify_in from '@/views/douban/Music_classify_in';
 import Myself from '@/views/my/Myself';
 import Money from '@/views/my/Money';
 import Money_ticket from '@/views/my/Money_ticket';
-
+import Setting_number from '@/views/my/Setting_number';
+import Push from '@/views/my/Push';
+import Market_recommend from '@/views/market/Market_recommend';
 
 
 
@@ -176,6 +178,21 @@ const routes = [
     path:'/money_ticket',
     name:'Money_ticket',
     component:Money_ticket
+  },
+  {
+    path:'/setting_number',
+    name:'Setting_number',
+    component:Setting_number
+  },
+  {
+    path:'/push',
+    name:'Push',
+    component:Push
+  },
+  {
+    path:'/market_recommend',
+    name:'Market_recommend',
+    component:Market_recommend
   }
   
   

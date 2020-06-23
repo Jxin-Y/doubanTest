@@ -11,7 +11,7 @@
                     <img class="market_doupin_one_img" src="..\..\assets\img\market\doupin1.png">
                 </div>
                 <div class="market_doupin_two">
-                    <div class="market_doupin_two1">
+                    <div @click="macommend" class="market_doupin_two1">
                         <img class="market_doupin_two1_img" src="..\..\assets\img\market\doupinicon1.png">
                         <div>
                             <span class="market_doupin_two1_text">豆瓣经典</span>
@@ -274,7 +274,7 @@
                         :color="'#000000'">
                             <van-tab title="推荐">
                                 <div class="market_doupin_four_body">
-                        <div class="market_doupin_four_body1">
+                                    <div class="market_doupin_four_body1">
                             <div class="market_doupin_four_body1_up">
                                 <div>
                                     <img class="market_doupin_four_body1_img1" src="..\..\assets\img\market\doupintuijian1.png">
@@ -814,6 +814,16 @@
     </van-tabs>
 </div>
 </template>
+
+<script>
+export default {
+  methods:{
+        macommend(){
+            this.$router.push("/market_recommend")
+        }
+    }
+};
+</script>
 
 <style scoped>
 .market_doupin_one_img{
